@@ -11,7 +11,7 @@
     3. Кликнуть на выбранный товар, открывается подробная информация о товаре с Description
     4. Вызвать контекстное меню Language
     5. Переключиться на русскоязычную версию сайта выбрав Russian
-    6. Screenshot Description(описание товара)
+    6. Screenshot-1 Description(описание товара)
   expected-result: |
     Вся информация на сайте при преключении на русскоязычную версию, отображается на русском языке
   actual-result: |
@@ -27,7 +27,7 @@
   steps-to-reproduce: |
     1. Открыть главную страницу сайта https://hexlet-products-store.vercel.app/ на мобильном устростве
     2. Сравнить визуально мобильную версию сайта и дестопную
-    3. Screenshot мобильной версии сайта
+    3. Screenshot-2 Мобильная версия сайта
   expected-result: |
     Мобильная версия сайта не отличается от десктопной
   actual-result: |
@@ -43,7 +43,7 @@
     1. Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
     2. Вызвать контекстное меню Language
     3. Выбрать англоязычную версию сайта нажав Englich
-    4. Screenshot контекстного меню Language > Englich
+    4. Screenshot-3 Контекстное меню Language > Englich
   expected-result: |
     В контекстном меню Language, иконки Русского и Английского языков отображаются
   actual-result: |
@@ -59,9 +59,9 @@
     1. Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
     2. В строке поиска ввести название невалидного товара, например "Fly X7"
     3. На странице видим "Nothing found!"
-    4. Screenshot полученного ответа
+    4. Screenshot-4 Полученный ответ
   expected-result: |
-    На странице выводится ответ "Nothing found!" бед выбора дополнительных кнопок
+    На странице выводится ответ "Nothing found!" без выбора дополнительных кнопок
   actual-result: |
     На странице выводится ответ "Nothing found!" и появляются дублированные кнопки Следущющая/Предыдущая
     
@@ -74,7 +74,7 @@
   steps-to-reproduce: |
     1. Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
     2. Отключить чек-бокс "In Stock"(в наличии)
-    3. Screenshot полученного ответа
+    3. Screenshot-5 Полученный ответ
   expected-result: |
     На главной странице сайта вывовидтся список всех товаров
   actual-result: |
