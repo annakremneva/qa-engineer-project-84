@@ -1,0 +1,115 @@
+---
+- summary: |
+    Description(описание товара) не переведено для русскоязычной версии сайта
+  environment: |
+    - Google Chrome
+    - Version 6.1 (сборка 7601: Service Pack 1)
+    - ОС Windows 7
+  steps-to-reproduce: |
+    1. Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+    2. Выбрать любой товар, например "Huawei P30"
+    3. Кликнуть на выбранный товар, открывается подробная информация о товаре с Description
+    4. Вызвать контекстное меню Language
+    5. Переключиться на русскоязычную версию сайта выбрав Russian
+    6. Screenshot Description(описание товара)
+  expected-result: |
+    Вся информация на сайте при преключении на русскоязычную версию, отображается на русском языке
+  actual-result: |
+    Description(описание товара) для русскоязычной версии сайта не переводится 
+    
+- summary: |
+   Нет мобильной версии сайта
+  environment: |
+    - Samsung Galaxy A31
+    - Android 11
+    - Экран: 6.4 in, 1080*2400 пикс.
+    - Google Chrome    
+  steps-to-reproduce: |
+    1. Открыть главную страницу сайта https://hexlet-products-store.vercel.app/ на мобильном устростве
+    2. Сравнить визуально мобильную версию сайта и дестопную
+    3. Screenshot мобильной версии сайта
+  expected-result: |
+    Мобильная версия сайта не отличается от десктопной
+  actual-result: |
+    При открытии сайта на мобильном устройстве, верстка "съезжает", сайт не адаптирован под мобильную версию
+    
+- summary: |
+    В контекстном меню Language при выборе Английского языка не отображается его иконка(флаг)
+  environment: |
+    - Google Chrome
+    - Version 6.1 (сборка 7601: Service Pack 1)
+    - ОС Windows 7
+  steps-to-reproduce: |
+    1. Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+    2. Вызвать контекстное меню Language
+    3. Выбрать англоязычную версию сайта нажав Englich
+    4. Screenshot контекстного меню Language > Englich
+  expected-result: |
+    В контекстном меню Language, иконки Русского и Английского языков отображаются
+  actual-result: |
+    В контекстном меню Language, иконка(флаг) Englich не отображается
+    
+- summary: |
+    Кнопки Следующая/Предыдущая отображаются и дублируются при пустой выдаче
+  environment: |
+    - Google Chrome
+    - Version 6.1 (сборка 7601: Service Pack 1)
+    - ОС Windows 7
+  steps-to-reproduce: |
+    1. Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+    2. В строке поиска ввести название невалидного товара, например "Fly X7"
+    3. На странице видим "Nothing found!"
+    4. Screenshot полученного ответа
+  expected-result: |
+    На странице выводится ответ "Nothing found!" бед выбора дополнительных кнопок
+  actual-result: |
+    На странице выводится ответ "Nothing found!" и появляются дублированные кнопки Следущющая/Предыдущая
+    
+- summary: |
+    При отключенном чек-боксе "In Stock", на главной странице не отображаются все товаровы
+  environment: |
+    - Google Chrome
+    - Version 6.1 (сборка 7601: Service Pack 1)
+    - ОС Windows 7
+  steps-to-reproduce: |
+    1. Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+    2. Отключить чек-бокс "In Stock"(в наличии)
+    3. Screenshot полученного ответа
+  expected-result: |
+    На главной странице сайта вывовидтся список всех товаров
+  actual-result: |
+    На главной странице сайта не вывовидтся список всех товаров, страница пуста
+    
+- summary: |
+    Изображения-миниатюры(thumbnail) в карточке товара не кликабельны
+  environment: |
+    - Google Chrome
+    - Version 6.1 (сборка 7601: Service Pack 1)
+    - ОС Windows 7
+  steps-to-reproduce: |
+    1. Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+    2. Выбрать любой товар, например "Huawei P30"
+    3. Кликнуть на выбранный товар, открывается подробная информация о товаре с изображениями
+  expected-result: |
+    Есть возможность посмотреть каждое изображение-миниатюру(thumbnail) товара отдельно
+  actual-result: |
+    Нет возможности просматривать каждое изображение-миниатюру(thumbnail) товара и переключаться мужду ними(не кликабельны)
+    
+- summary: |
+    Содержимое корзины не остается в сессии браузера
+  environment: |
+    - Google Chrome
+    - Version 6.1 (сборка 7601: Service Pack 1)
+    - ОС Windows 7
+  steps-to-reproduce: |
+    1. Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+    2. Выбрать любой товар из каталожной страницы, например "Huawei P30"
+    3. Добавить товар в "Cart", нажав кнопку "Add to cart"
+    4. Перейти в корзину нажав "Cart", выбранный товар отображается в корзине
+    5. Открыть новую вкладку в браузере
+    6. Вввести страницу сайта https://hexlet-products-store.vercel.app/
+    7. Перейти в корзину нажав "Cart", корзина пуста
+  expected-result: |
+    Товары добавленные ранее в корзину, остаются в сессии браузера
+  actual-result: |
+    При открытии магазина в новой вкладке в браузере, дабавленные ранее товары в корзине не сохраняются
