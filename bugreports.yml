@@ -18,6 +18,7 @@
     
 - summary: |
     Не работает фильтрация товаров по цене
+  environment: |
     - Google Chrome
     - Version 6.1 (сборка 7601: Service Pack 1)
     - ОС Windows 7
