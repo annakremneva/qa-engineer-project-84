@@ -125,6 +125,7 @@ test-cases:
   status: fail 
 
 bugreports: 
+
 - summary: |
     Не работает поиск товаров в "Поисковой строке" по не валидному ключевому слову
   environment: |
