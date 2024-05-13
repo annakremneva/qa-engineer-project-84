@@ -122,8 +122,7 @@ test-cases:
   
 - summary: |
     Проверка работы "Поисковой строки" при вводе не валидного ключевого слова
-  status: fail
-...
+  status: fail 
 
 bugreports:
 - summary: |
