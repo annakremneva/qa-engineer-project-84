@@ -133,8 +133,7 @@ bugreports:
     - ОС Windows 7
   steps-to-reproduce: |
     1. Открыть главную страницу интернет-магазина https://hexlet-products-store.vercel.app/
-    2. Установить курсор в поле ввода "Search"
-    3. Ввести любую не валидную модель товара
+    2. Ввести любую не валидную модель товара в поле "Search"
   expected-result: |
     На странице сайта вывовидтся сообщение "Nothing found!"
   actual-result: |
